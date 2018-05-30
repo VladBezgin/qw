@@ -1,7 +1,7 @@
-var budgetForTheMonth = +prompt("Ваш бюджет на месяц?", '10000');
-var name = prompt("Название вашего магазина?");
+let budget = +prompt("Ваш бюджет на месяц?", '10000');
+let name = prompt("Название вашего магазина?");
 var mainList = {
-	'budget': budgetForTheMonth,
+	'budget': budget,
 	'name': name,
 	shopGoods: [],
 	employers: {},
@@ -13,7 +13,7 @@ mainList.shopGoods[0] = prompt("Какой тип товаров будем пр
 mainList.shopGoods[1] = prompt("Какой тип товаров будем продавать?");
 mainList.shopGoods[2] = prompt("Какой тип товаров будем продавать?");
 
-var budgetForDay = budgetForTheMonth/30;
+var budgetForDay = budget/30;
 alert( 'Бюджет на 1 день: ' + budgetForDay );
 
 console.log(mainList.shopGoods)
