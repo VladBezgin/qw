@@ -1,8 +1,8 @@
 var budgetForTheMonth = +prompt("Ваш бюджет на месяц?", '10000');
 var name = prompt("Название вашего магазина?");
 var mainList = {
-	budgetForTheMonth,
-	name,
+	'budget': budgetForTheMonth,
+	'name': name,
 	shopGoods: [],
 	employers: {},
 	open,
