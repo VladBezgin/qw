@@ -117,7 +117,7 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 
 
-
+});
 
 
     var nav = document.querySelectorAll('[href^="#"]'),
@@ -144,4 +144,5 @@ window.addEventListener('DOMContentLoaded', function() {
             }
         }, false);
     }
-});
+
+
