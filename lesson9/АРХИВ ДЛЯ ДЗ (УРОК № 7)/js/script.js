@@ -77,9 +77,7 @@ window.addEventListener('DOMContentLoaded', function() {
             minutes.textContent = t.minutes;
             seconds.textContent = t.seconds;
 
-            if (t.total <= 0) {
-                clearInterval(timeInterval);
-            }
+           
         };
 
         updateClock();
