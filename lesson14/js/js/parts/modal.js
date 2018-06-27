@@ -1,19 +1,27 @@
 function modal() {
 	 let more = document.querySelector('.more'),
-        descriptionBtn = document.querySelector('.description-btn'),
+        descriptionBtn = document.querySelectorAll('.description-btn'),
         overlay = document.querySelector('.overlay'),
         close = document.querySelector('.popup-close');
 
-    descriptionBtn.addEventListener('click', function() {
+function mdalOpen(descrBtn) {
+
+    descrBtn.addEventListener('click', function() {
         this.classList.add('description-btn-splash');
         overlay.style.display = 'block';
         document.body.style.overflow = 'hidden';
     });
     close.addEventListener('click', function() {
         overlay.style.display = 'none';
-        descriptionBtn.classList.remove('description-btn-splash');
+        descrBtn.classList.remove('description-btn-splash');
         document.body.style.overflow = '';
     });
+}
+
+mdalOpen(descriptionBtn[0]);
+mdalOpen(descriptionBtn[1]);
+mdalOpen(descriptionBtn[2]);
+mdalOpen(descriptionBtn[3]);
 
 
     more.addEventListener('click', function() {
